@@ -38,7 +38,9 @@ interface NewCommandOptions {
   showCards?: boolean;
 }
 
-@Command({ name: 'new', arguments: 'playersCount' })
+@Command({ name: 'new', arguments: 'playersCount', description: 'Start a new blackjack game with the desired number of players. ' +
+    'After running this command the cli will generate a <gameId> and <playerName>, ' +
+    'use this info to continue playing on the next commands: <hit>, <stay> and <result>' })
 export class BlackJackNewCommander extends CommandRunner {
   constructor(private readonly blackJackService: BlackJackService, private readonly logService: LogService) {
     super()
@@ -62,7 +64,7 @@ export class BlackJackNewCommander extends CommandRunner {
 
   @Option({
     flags: '-n, --playersCount [number]',
-    description: 'A basic number parser',
+    description: 'desired number of players to play',
   })
   parseNumber(val: string): number {
     return Number(val);
@@ -70,6 +72,7 @@ export class BlackJackNewCommander extends CommandRunner {
 
   @Option({
     flags: '--show-cards [boolean]',
+    description: 'Show the current state of the game could be bloated due to the number of cards in the table, use this flag to hide the cards from the players and see only the sum of the cards.',
   })
   showCards(val: string): boolean {
     return JSON.parse(val);
@@ -97,6 +100,7 @@ export class BlackJackResultCommander extends CommandRunner {
 
   @Option({
     flags: '--show-cards [boolean]',
+    description: 'Show the current state of the game could be bloated due to the number of cards in the table, use this flag to hide the cards from the players and see only the sum of the cards.',
   })
   showCards(val: string): boolean {
     return JSON.parse(val);
@@ -120,6 +124,7 @@ export class BlackJackPlayerHitCommander extends CommandRunner {
 
   @Option({
     flags: '--show-cards [boolean]',
+    description: 'Show the current state of the game could be bloated due to the number of cards in the table, use this flag to hide the cards from the players and see only the sum of the cards.',
   })
   showCards(val: string): boolean {
     return JSON.parse(val);
@@ -144,6 +149,7 @@ export class BlackJackPlayerStayCommander extends CommandRunner {
 
   @Option({
     flags: '--show-cards [boolean]',
+    description: 'Show the current state of the game could be bloated due to the number of cards in the table, use this flag to hide the cards from the players and see only the sum of the cards.',
   })
   showCards(val: string): boolean {
     return JSON.parse(val);

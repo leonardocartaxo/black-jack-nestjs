@@ -10458,41 +10458,11 @@
         "type": "DIAMONDS",
         "value": 9,
         "visible": true
-      },
-      {
-        "name": "5",
-        "type": "CLUBS",
-        "value": 5,
-        "visible": true
-      },
-      {
-        "name": "7",
-        "type": "HEARTS",
-        "value": 7,
-        "visible": true
-      },
-      {
-        "name": "4",
-        "type": "SPADES",
-        "value": 4,
-        "visible": true
-      },
-      {
-        "name": "5",
-        "type": "SPADES",
-        "value": 5,
-        "visible": true
-      },
-      {
-        "name": "5",
-        "type": "DIAMONDS",
-        "value": 5,
-        "visible": true
       }
     ],
     "dealerDeck": {
-      "status": "PLAYING",
-      "sum": 13,
+      "status": "STOPPED",
+      "sum": 18,
       "cards": [
         {
           "name": "Q",
@@ -10505,14 +10475,20 @@
           "type": "DIAMONDS",
           "value": 3,
           "visible": true
+        },
+        {
+          "name": "5",
+          "type": "CLUBS",
+          "value": 5,
+          "visible": true
         }
       ],
       "name": "dealer"
     },
     "playerDecks": [
       {
-        "status": "PLAYING",
-        "sum": 10,
+        "status": "WINNER",
+        "sum": 20,
         "cards": [
           {
             "name": "8",
@@ -10525,13 +10501,25 @@
             "type": "CLUBS",
             "value": 2,
             "visible": true
+          },
+          {
+            "name": "5",
+            "type": "DIAMONDS",
+            "value": 5,
+            "visible": true
+          },
+          {
+            "name": "5",
+            "type": "SPADES",
+            "value": 5,
+            "visible": true
           }
         ],
         "name": "p1"
       },
       {
-        "status": "PLAYING",
-        "sum": 11,
+        "status": "BURST",
+        "sum": 22,
         "cards": [
           {
             "name": "3",
@@ -10544,13 +10532,57 @@
             "type": "DIAMONDS",
             "value": 8,
             "visible": true
+          },
+          {
+            "name": "4",
+            "type": "SPADES",
+            "value": 4,
+            "visible": true
+          },
+          {
+            "name": "7",
+            "type": "HEARTS",
+            "value": 7,
+            "visible": true
           }
         ],
         "name": "p2"
       }
     ],
-    "status": "IN PROGRESS",
-    "winners": [],
+    "status": "FINISHED",
+    "winners": [
+      {
+        "status": "WINNER",
+        "sum": 20,
+        "cards": [
+          {
+            "name": "8",
+            "type": "SPADES",
+            "value": 8,
+            "visible": true
+          },
+          {
+            "name": "2",
+            "type": "CLUBS",
+            "value": 2,
+            "visible": true
+          },
+          {
+            "name": "5",
+            "type": "DIAMONDS",
+            "value": 5,
+            "visible": true
+          },
+          {
+            "name": "5",
+            "type": "SPADES",
+            "value": 5,
+            "visible": true
+          }
+        ],
+        "name": "p1"
+      }
+    ],
     "id": "30"
   },
   "31": {
@@ -11920,5 +11952,347 @@
     "status": "IN PROGRESS",
     "winners": [],
     "id": "34"
+  },
+  "35": {
+    "remainingCards": [
+      {
+        "name": "A",
+        "type": "CLUBS",
+        "value": 11,
+        "visible": true
+      },
+      {
+        "name": "9",
+        "type": "SPADES",
+        "value": 9,
+        "visible": true
+      },
+      {
+        "name": "3",
+        "type": "SPADES",
+        "value": 3,
+        "visible": true
+      },
+      {
+        "name": "J",
+        "type": "DIAMONDS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "6",
+        "type": "DIAMONDS",
+        "value": 6,
+        "visible": true
+      },
+      {
+        "name": "3",
+        "type": "DIAMONDS",
+        "value": 3,
+        "visible": true
+      },
+      {
+        "name": "10",
+        "type": "CLUBS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "A",
+        "type": "SPADES",
+        "value": 11,
+        "visible": true
+      },
+      {
+        "name": "K",
+        "type": "DIAMONDS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "5",
+        "type": "CLUBS",
+        "value": 5,
+        "visible": true
+      },
+      {
+        "name": "6",
+        "type": "SPADES",
+        "value": 6,
+        "visible": true
+      },
+      {
+        "name": "7",
+        "type": "DIAMONDS",
+        "value": 7,
+        "visible": true
+      },
+      {
+        "name": "8",
+        "type": "CLUBS",
+        "value": 8,
+        "visible": true
+      },
+      {
+        "name": "8",
+        "type": "HEARTS",
+        "value": 8,
+        "visible": true
+      },
+      {
+        "name": "A",
+        "type": "DIAMONDS",
+        "value": 11,
+        "visible": true
+      },
+      {
+        "name": "9",
+        "type": "DIAMONDS",
+        "value": 9,
+        "visible": true
+      },
+      {
+        "name": "4",
+        "type": "SPADES",
+        "value": 4,
+        "visible": true
+      },
+      {
+        "name": "9",
+        "type": "HEARTS",
+        "value": 9,
+        "visible": true
+      },
+      {
+        "name": "3",
+        "type": "HEARTS",
+        "value": 3,
+        "visible": true
+      },
+      {
+        "name": "Q",
+        "type": "SPADES",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "2",
+        "type": "CLUBS",
+        "value": 2,
+        "visible": true
+      },
+      {
+        "name": "Q",
+        "type": "CLUBS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "10",
+        "type": "SPADES",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "10",
+        "type": "DIAMONDS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "5",
+        "type": "HEARTS",
+        "value": 5,
+        "visible": true
+      },
+      {
+        "name": "4",
+        "type": "DIAMONDS",
+        "value": 4,
+        "visible": true
+      },
+      {
+        "name": "8",
+        "type": "DIAMONDS",
+        "value": 8,
+        "visible": true
+      },
+      {
+        "name": "7",
+        "type": "CLUBS",
+        "value": 7,
+        "visible": true
+      },
+      {
+        "name": "4",
+        "type": "CLUBS",
+        "value": 4,
+        "visible": true
+      },
+      {
+        "name": "9",
+        "type": "CLUBS",
+        "value": 9,
+        "visible": true
+      },
+      {
+        "name": "3",
+        "type": "CLUBS",
+        "value": 3,
+        "visible": true
+      },
+      {
+        "name": "A",
+        "type": "HEARTS",
+        "value": 11,
+        "visible": true
+      },
+      {
+        "name": "J",
+        "type": "SPADES",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "4",
+        "type": "HEARTS",
+        "value": 4,
+        "visible": true
+      },
+      {
+        "name": "2",
+        "type": "HEARTS",
+        "value": 2,
+        "visible": true
+      },
+      {
+        "name": "10",
+        "type": "HEARTS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "Q",
+        "type": "HEARTS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "5",
+        "type": "SPADES",
+        "value": 5,
+        "visible": true
+      },
+      {
+        "name": "K",
+        "type": "SPADES",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "K",
+        "type": "HEARTS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "5",
+        "type": "DIAMONDS",
+        "value": 5,
+        "visible": true
+      },
+      {
+        "name": "8",
+        "type": "SPADES",
+        "value": 8,
+        "visible": true
+      },
+      {
+        "name": "2",
+        "type": "DIAMONDS",
+        "value": 2,
+        "visible": true
+      },
+      {
+        "name": "K",
+        "type": "CLUBS",
+        "value": 10,
+        "visible": true
+      },
+      {
+        "name": "7",
+        "type": "HEARTS",
+        "value": 7,
+        "visible": true
+      },
+      {
+        "name": "6",
+        "type": "CLUBS",
+        "value": 6,
+        "visible": true
+      }
+    ],
+    "dealerDeck": {
+      "status": "PLAYING",
+      "sum": 17,
+      "cards": [
+        {
+          "name": "Q",
+          "type": "DIAMONDS",
+          "value": 10,
+          "visible": false
+        },
+        {
+          "name": "7",
+          "type": "SPADES",
+          "value": 7,
+          "visible": true
+        }
+      ],
+      "name": "Dealer"
+    },
+    "playerDecks": [
+      {
+        "status": "PLAYING",
+        "sum": 12,
+        "cards": [
+          {
+            "name": "J",
+            "type": "CLUBS",
+            "value": 10,
+            "visible": true
+          },
+          {
+            "name": "2",
+            "type": "SPADES",
+            "value": 2,
+            "visible": true
+          }
+        ],
+        "name": "p1"
+      },
+      {
+        "status": "PLAYING",
+        "sum": 16,
+        "cards": [
+          {
+            "name": "6",
+            "type": "HEARTS",
+            "value": 6,
+            "visible": true
+          },
+          {
+            "name": "J",
+            "type": "HEARTS",
+            "value": 10,
+            "visible": true
+          }
+        ],
+        "name": "p2"
+      }
+    ],
+    "status": "IN PROGRESS",
+    "winners": [],
+    "id": "35"
   }
 }

@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { BlackJackService } from './black-jack.service';
 import { BlackJackRepository } from './black-jack.repository';
 import {
-  BlackJackDefaultCommander,
   BlackJackNewCommander,
   BlackJackPlayerHitCommander,
   BlackJackPlayerStayCommander,
@@ -15,7 +14,6 @@ import { LogService } from './log.service';
     LogService,
     BlackJackService,
     BlackJackRepository,
-    BlackJackDefaultCommander,
     BlackJackNewCommander,
     BlackJackResultCommander,
     BlackJackPlayerHitCommander,
