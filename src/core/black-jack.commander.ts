@@ -1,10 +1,7 @@
 import {
   Command,
   CommandRunner,
-  InquirerService,
   Option,
-  Question,
-  QuestionSet,
 } from 'nest-commander';
 import { LogService } from './log.service';
 import { BlackJackService } from './black-jack.service';
@@ -39,56 +36,6 @@ const hideCards = (blackJackResult: BlackJackResult) => {
 
 interface NewCommandOptions {
   showCards?: boolean;
-}
-
-@QuestionSet({ name: 'root' })
-export class RootQuestions {
-  @Question({
-    message: 'Enter your command. type "help" for help',
-    name: 'root'
-  })
-  parseTask(val: string) {
-    return val;
-  }
-}
-
-@Command({
-  name: 'my-exec',
-  arguments: '[task]',
-  options: { isDefault: true }
-})
-export class BlackJackDefaultCommander extends CommandRunner {
-  constructor(
-    private readonly blackJackService: BlackJackService,
-    private readonly logService: LogService,
-    private readonly inquirer: InquirerService
-  ) {
-    super()
-  }
-
-  async run(inputs: string[], options: Record<string, string>): Promise<void> {
-    let task = inputs[0];
-    if (!task) {
-      const inquirer = this.inquirer.inquirer;
-      const helpCommand = 'help';
-      const helpDescription = 'new-game ';
-      const rootQuestions = [{ name: 'root', message: 'Enter your command. type "help" for help' }];
-      const answers = await inquirer.prompt(rootQuestions);
-      if (Object.values(answers).includes(helpCommand)) {
-        console.log(answers);
-      } else {
-
-      }
-      console.log(answers);
-    }
-  }
-  @Option({
-    flags: '-s, --shell <shell>',
-    description: 'A different shell to spawn than the default'
-  })
-  parseShell(val: string) {
-    return val;
-  }
 }
 
 @Command({ name: 'new', arguments: 'playersCount' })
